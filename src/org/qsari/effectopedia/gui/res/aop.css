@@ -1,0 +1,213 @@
+.imgInitiator_ChemicalStructure {
+	background-image: url('aop_icons.png');
+	background-position: 0px -3px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgInitiator_StructuralAlerts {
+	background-image: url('aop_icons.png');
+	background-position: 0px -31px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgInitiator_BiologcalPerturbation {
+	background-image: url('aop_icons.png');
+	background-position: 0px -60px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgEffect_MolecularInitiatingEvent {
+	background-image: url('aop_icons.png');
+	background-position: -35px -3px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgEffect_DownstreamEffect {
+	background-image: url('aop_icons.png');
+	background-position: -35px -31px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgEffect_Endpoint {
+	background-image: url('aop_icons.png');
+	background-position: -35px -60px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgEffect_AdverseOutcome {
+	background-image: url('aop_icons.png');
+	background-position: -35px -89px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgLink {
+	background-image: url('aop_icons.png');
+	background-position: -68px -3px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgTestResponseMapping {
+	background-image: url('aop_icons.png');
+	background-position: -68px -31px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgTestInVitro {
+	background-image: url('aop_icons.png');
+	background-position: -104px -3px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgTestInVivo {
+	background-image: url('aop_icons.png');
+	background-position: -104px -31px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgTestInSilico {
+	background-image: url('aop_icons.png');
+	background-position: -104px -60px;
+	height: 28px;
+	width: 28px;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.imgPathway {
+	background-image: url('aop_icons.png');
+	background-position: -104px -85px;
+	height: 28px;
+	width: 28px;
+	display: display:inline-block;
+	position: relative;
+	float: left;
+}
+
+.naviLink, .topLink {
+	text-decoration: none;
+}
+
+.naviContent {
+	margin: 0 0 0 50px;
+}
+
+.naviLink:hover, .topLink:hover {
+	text-decoration: underline;
+}
+
+.naviLink:visited, .topLink:visited {
+	color: blue;
+}
+
+.descriptionContent {
+	margin: 0 0 0 50px;
+}
+
+.stressorTitle, .eventTitle {
+	font-size: 14pt;
+	height: 35px;
+	margin: 10px 0 0 0;
+}
+
+.eventTitle {
+	color: blue;
+}
+
+.eventTitle span, .stressorTitle span {
+	margin: 0 4px 0 0;
+}
+
+.stressorTitle {
+	color: green;
+}
+
+.descriptionSectionTitle, .keywordsTitle {
+	font-size: 13pt;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.initiator2DImageDiv {
+	margin: 0 0 0 50px;
+}
+
+.initiatorPropertiesTable {
+	margin: 0 0 0 50px;
+	border: solid #eee 1px;
+	border-spacing: 0px;
+	table-layout: fixed;
+}
+
+.initiatorPropertiesTable td {
+	padding: 3px 6px;
+	border: solid #eee 1px;
+}
+
+.tableHeader {
+	background-color: #eee;
+}
+
+a.topLink {
+	margin: 0 0 0 50px;
+	color: gray !important;
+}
+
+p {
+	margin: 0.3em 0 1em 0;
+}
+
+.pathwaySeparator {
+	height: 10px;
+	margin: 0 0 100px 0;
+}
+
+.pathwayDiagram {
+	overflow: auto;
+	width: 96%;
+	margin: 10px 2% 10px 2%;
+}

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Effectopedia 0.9.5-->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="PathwayView" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+width="2930" height="928">
+<defs>
+<pattern id="grid_pattern" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+<circle cx="7" cy="7" r="1" style="stroke: none; fill: #ebebeb" />
+</pattern>
+</defs>
+<g id="PathwaySpace">
+<g transform="translate(32 0)" id="PathwaySpaceProjection">
+<rect x="0" y="0" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="0" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="0" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="0" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="0" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="0" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="122" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="122" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="122" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="122" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="122" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="122" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="244" width="334" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="244" width="492" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="244" width="492" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="244" width="140" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="244" width="140" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="244" width="124" height="164" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="444" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="444" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="444" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="444" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="444" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="444" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="566" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="566" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="566" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="566" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="566" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="566" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="688" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="688" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="688" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="688" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="688" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="688" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="0" y="810" width="334" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="370" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="530" y="810" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1058" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1218" y="810" width="492" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1782" y="810" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="1958" y="810" width="140" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2134" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2294" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2454" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2614" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+<rect x="2774" y="810" width="124" height="86" rx="8" ry="16" style="fill: url(#grid_pattern);stroke:#ebebeb;stroke-width:1;"/>
+</g>
+<g transform="translate(32 897)" id="X_Axis_Labels">
+<text x="144" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+molecular</text>
+<text x="350" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="411" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+organelle</text>
+<text x="510" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="759" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+cellular</text>
+<text x="1038" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="1106" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+tissue</text>
+<text x="1198" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="1451" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+organ</text>
+<text x="1744" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="1820" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+organ system</text>
+<text x="1938" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2005" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+individual</text>
+<text x="2114" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2170" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+population</text>
+<text x="2274" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2339" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+species</text>
+<text x="2434" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2486" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+communities</text>
+<text x="2594" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2651" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+ecosystem</text>
+<text x="2754" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text x="2813" y="11" style="fill: #636363; stroke: none; font-size: 11px;">
+biosphere</text>
+</g>
+<g id="Y_Axis_Labels">
+<text transform="rotate(-90 26 59)" x="26" y="59" style="fill: #636363; stroke: none; font-size: 11px;">
+asexual</text>
+<text transform="rotate(-90 26 105)" x="26" y="105" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 175)" x="26" y="175" style="fill: #636363; stroke: none; font-size: 11px;">
+male</text>
+<text transform="rotate(-90 26 227)" x="26" y="227" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 339)" x="26" y="339" style="fill: #636363; stroke: none; font-size: 11px;">
+mixed</text>
+<text transform="rotate(-90 26 427)" x="26" y="427" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 501)" x="26" y="501" style="fill: #636363; stroke: none; font-size: 11px;">
+female</text>
+<text transform="rotate(-90 26 549)" x="26" y="549" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 636)" x="26" y="636" style="fill: #636363; stroke: none; font-size: 11px;">
+third gender</text>
+<text transform="rotate(-90 26 671)" x="26" y="671" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 765)" x="26" y="765" style="fill: #636363; stroke: none; font-size: 11px;">
+hermaphrodite</text>
+<text transform="rotate(-90 26 793)" x="26" y="793" style="fill: #636363; stroke: none; font-size: 11px;">
+-</text>
+<text transform="rotate(-90 26 879)" x="26" y="879" style="fill: #636363; stroke: none; font-size: 11px;">
+unspecified</text>
+</g>
+</g>
+<g transform="translate(32 0)" id="PathwayLayer">
+<g id="Initiator_ChemicalStructure_0">
+<rect x="12" y="295" width="134" height="62" stroke="#67da93" fill="#ffffff" stroke-width="2"/>
+<text x="16" y="308" style="fill: #67da93; stroke: none; font-size: 11px;">
+Chemical Strucutre</text>
+</g>
+<g id="Link_ChemStructToMIE_0">
+<circle id="Link_ChemStructToMIE_0" cx="176" cy="326" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="176" cy="326" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="172" y="331" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_MolecularInitiatingEvent_0">
+<rect x="206" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="212" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="214" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Covalent modification of </tspan>
+<tspan x="214" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">cellular </tspan>
+<tspan x="214" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">protein </tspan>
+</text>
+<rect x="300" y="327" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="302" y="337" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="352" cy="326" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="352" cy="326" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="348" y="331" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="542" y="256" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="548" y="258" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="550" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Keratinocytes </tspan>
+<tspan x="550" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Activation </tspan>
+</text>
+<rect x="636" y="276" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="638" y="286" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="545" y1="290" x2="658" y2="290" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="688" cy="285" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="688" cy="285" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="684" y="290" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="718" y="256" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="724" y="258" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="726" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Dendritic cells </tspan>
+<tspan x="726" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">activation </tspan>
+</text>
+<rect x="812" y="276" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="814" y="286" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="721" y1="290" x2="834" y2="290" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="864" cy="285" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="864" cy="285" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="860" y="290" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="894" y="256" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="900" y="258" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="902" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Dendritic cell </tspan>
+<tspan x="902" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">maturation </tspan>
+</text>
+<rect x="988" y="276" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="990" y="286" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="897" y1="290" x2="1010" y2="290" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="864" cy="367" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="864" cy="367" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="860" y="372" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="894" y="338" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="900" y="340" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="902" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Dendritic cells </tspan>
+<tspan x="902" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">migration </tspan>
+</text>
+<rect x="988" y="358" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="990" y="368" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="897" y1="372" x2="1010" y2="372" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1040" cy="285" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1040" cy="285" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1036" y="290" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1040" cy="367" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1040" cy="367" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1036" y="372" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="1230" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="1236" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="1238" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Dendretic cell antigen </tspan>
+<tspan x="1238" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">presentaion </tspan>
+</text>
+<rect x="1324" y="317" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="1326" y="327" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="1233" y1="331" x2="1346" y2="331" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1376" cy="326" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1376" cy="326" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1372" y="331" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="1406" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="1412" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="1414" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">T cell activation </tspan>
+</text>
+<rect x="1500" y="301" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="1502" y="311" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="1409" y1="315" x2="1522" y2="315" stroke="#6793da" stroke-width="1"/>
+<line x1="1409" y1="335" x2="1522" y2="335" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1552" cy="326" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1552" cy="326" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1548" y="331" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="1582" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="1588" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="1590" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">T cell </tspan>
+<tspan x="1590" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">proliferation </tspan>
+</text>
+<rect x="1676" y="317" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="1678" y="327" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="1585" y1="331" x2="1698" y2="331" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1728" cy="367" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1728" cy="367" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1724" y="372" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="1794" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="1800" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="1802" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">T cell </tspan>
+<tspan x="1802" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">differentiation </tspan>
+</text>
+<rect x="1888" y="317" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="1890" y="327" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="1797" y1="331" x2="1910" y2="331" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Link_EffectToEffect_0">
+<circle id="Link_EffectToEffect_0" cx="1940" cy="326" r="10" stroke="#fbb03b" fill="#ffffff" stroke-width="2"/>
+<circle cx="1940" cy="326" r="7" style=" fill: #fbb03b; stroke: none;"/>
+<text x="1936" y="331" style="fill: #ffffff; stroke: none; font-size: 11px;">
+H</text>
+</g>
+<g id="Effect_DownstreamEffect_0">
+<rect x="1970" y="297" width="116" height="58" rx="6" ry="6" stroke="#6793da" fill="#ffffff" stroke-width="2"/>
+<text x="1976" y="299" style="fill: #6793da; stroke: none; font-size: 11px;">
+<tspan x="1978" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Alergic Contact </tspan>
+<tspan x="1978" dy="11" style=" fill: #6793da; stroke: none; font-size: 11px;">Dermatitis </tspan>
+</text>
+<rect x="2064" y="317" width="19" height="12" rx="6" ry="6" stroke="none" fill="#6793da"/>
+<text x="2066" y="327" style="fill: #ffffff; stroke: none; font-size: 11px;">
+0</text>
+<line x1="1973" y1="331" x2="2086" y2="331" stroke="#6793da" stroke-width="1"/>
+</g>
+<g id="Arcs">
+<line x1="146" y1="326" x2="166" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="186" y1="326" x2="206" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="322" y1="326" x2="342" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="362" y1="326" x2="542" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="658" y1="285" x2="678" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="698" y1="285" x2="718" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="834" y1="285" x2="854" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="874" y1="285" x2="894" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1010" y1="285" x2="1030" y2="285" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1050" y1="285" x2="1230" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1346" y1="326" x2="1366" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1386" y1="326" x2="1406" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="833" y1="313" x2="857" y2="360" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="874" y1="367" x2="894" y2="367" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1010" y1="367" x2="1030" y2="367" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1050" y1="367" x2="1230" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1346" y1="326" x2="1366" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1386" y1="326" x2="1406" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1522" y1="326" x2="1542" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1562" y1="326" x2="1582" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1698" y1="326" x2="1718" y2="367" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1738" y1="367" x2="1794" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1910" y1="326" x2="1930" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+<line x1="1950" y1="326" x2="1970" y2="326" stroke="#c8c8c8" stroke-width="1"/>
+</g>
+</g>
+<text transform="rotate(-90 12 472)" x="12" y="472" style="fill: #6793da; stroke: none; font-size: 11px;">
+Sex</text>
+<line x1="8" y1="8" x2="8" y2="452" stroke="#6793da" stroke-width="1"/>
+<line x1="8" y1="476" x2="8" y2="928" stroke="#6793da" stroke-width="1"/>
+<path stroke="#6793da" fill="none" stroke-width="1" d="M 8 4 L 12 8 L 4 8  z" />
+<text x="1388" y="924" style="fill: #6793da; stroke: none; font-size: 11px;">
+Level of Biological Organization</text>
+<line x1="8" y1="0" x2="8" y2="16" stroke="#6793da" stroke-width="1"/>
+<line x1="0" y1="919" x2="1384" y2="919" stroke="#6793da" stroke-width="1"/>
+<line x1="1546" y1="919" x2="2920" y2="919" stroke="#6793da" stroke-width="1"/>
+<path stroke="#6793da" fill="none" stroke-width="1" d="M 2920 915 L 2924 919 L 2920 923  z" />
+</svg>

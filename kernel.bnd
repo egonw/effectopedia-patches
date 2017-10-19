@@ -1,0 +1,31 @@
+Bundle-Version: 0.9.55.${tstamp}
+Export-Package:  \
+	org.qsari.effectopedia.base,\
+	org.qsari.effectopedia.base.ids,\
+	org.qsari.effectopedia.base.io,\
+	org.qsari.effectopedia.core,\
+	org.qsari.effectopedia.core.containers,\
+	org.qsari.effectopedia.core.funrel,\
+	org.qsari.effectopedia.core.object.elemets,\
+	org.qsari.effectopedia.core.objects,\
+	org.qsari.effectopedia.core.ui,\
+	org.qsari.effectopedia.core.ui.nav,\
+	org.qsari.effectopedia.data,\
+	org.qsari.effectopedia.data.filter,\
+	org.qsari.effectopedia.data.formats,\
+	org.qsari.effectopedia.data.generated,\
+	org.qsari.effectopedia.data.interfaces,\
+	org.qsari.effectopedia.data.objects,\
+	org.qsari.effectopedia.defaults,\
+	org.qsari.effectopedia.data.quantification,\
+	org.qsari.effectopedia.history,\
+	org.qsari.effectopedia.notification,\
+	org.qsari.effectopedia.ontologies,\
+	org.qsari.effectopedia.search,\
+	org.qsari.effectopedia.system,\
+	org.qsari.effectopedia.utils
+Bundle-Name: Effectopedia Kernel
+Bundle-Description: Effectopedia core classes
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0
+Bundle-Activator: org.qsari.effectopedia.core.Activator

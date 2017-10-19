@@ -1,0 +1,8 @@
+Bundle-Version: 0.9.55.${tstamp}
+Bundle-Activator: org.qsari.effectopedia.utils.proxy.Activator
+Private-Package:  \
+	org.qsari.effectopedia.utils.proxy
+Bundle-Name: Proxy Detector
+Bundle-Description: Automatic proxy detection based on proxy vole library
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0

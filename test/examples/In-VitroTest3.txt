@@ -1,0 +1,13 @@
+In-vitroTest3							
+chem. conc.	Tested Chemical						
+logMol	mean value	min value	max value	standard deviation	standard mean error	confidence interval 95%	number of replicas
+-12	0				0		
+-11	3				2		
+-10	11				5		
+-9	19				7		
+-8	47				9		
+-6	105				5		
+-5	119				4		
+-4	135				11		
+-3	140				5		
+-2	141				5		

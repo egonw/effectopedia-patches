@@ -1,0 +1,5 @@
+XSendFile on
+
+<Files "composer.json">
+Require all denied
+</Files>

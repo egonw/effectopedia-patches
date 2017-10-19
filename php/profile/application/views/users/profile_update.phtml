@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<style type='text/css'>
+<!--
+a {color:#666666;}
+h1 {font-size: medium;}
+-->
+</style>
+</head>
+<body text="#666666">
+<center>
+<?php if(isset($error_message)) echo $error_message; ?>
+<?php if (isset($updated) && $updated): ?>
+    <p><strong>Your preferences have been saved.</strong></p>
+<?php endif; ?>
+
+<form action="<?php echo htmlspecialchars($form_action); ?>" method="post">
+<table align='center' border='0' cellpadding='2' cellspacing='2'>
+  <tr>
+    <td valign="top">
+        <p>
+            You can visit your <a href="<?php echo htmlspecialchars($account_url); ?>">account area</a> to update your profile.<br />
+            If you modified your display name, it will take effect next time you sign into the app.
+        </p>
+     </td>
+     <td width="40">&nbsp;
+     </td>
+    <td valign="top" align="left"> 
+      Options<br /><br />
+        Receive e-mail notifications when:<br />
+	    <input name="notify_on_changes" type="checkbox" onClick="UpdateOptions()" value="1" <?php if ($user_data["options"]&1) {echo 'checked="true"';} ?>/>       
+	     changes are made to your contributions<br />
+         <input name="notify_on_discussions" type="checkbox" onclick="UpdateOptions()" value="2" <?php if ($user_data["options"]&2) {echo 'checked="true"';} ?>/>
+your contribtions have been discussed </td>
+  </tr>
+    <tr>
+  <td colspan="3" align="right"><input type="submit" value="Update profile" /> </td>
+  </tr>
+  <tr>
+  <td colspan="3" align="right">&nbsp;<br /><br />
+  <a href='http://www.effectopedia.org/intreface.php?welcomeUIL&ini=welcome'>Go back to Welcome page</a>.</td>
+  </tr>
+</table> 
+</form>
+</center>
+ 
+</body>
+</html>

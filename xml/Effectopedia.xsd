@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.effectopedia.org/Effectopedia"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema"
+	xmlns:exs="http://www.effectopedia.org/Effectopedia">
+
+	<element name="effectopedia" type="exs:effectopediaType"></element>
+
+	<complexType name="effectopediaType">
+		<sequence>
+			<element name="format" type="exs:formatType" maxOccurs="1"
+				minOccurs="1">
+			</element>
+			<element name="annotation" type="string" maxOccurs="1"
+				minOccurs="0">
+			</element>
+			<element name="pathways" type="exs:pathwaysType"></element>
+			<element name="fragments" type="exs:pathway_elementsType"></element>
+			<element name="source_traces" type="exs:source_tracesType"></element>
+			<element name="live_components" type="exs:indicesType"></element>
+			<element name="archived_components" type="exs:indicesType"></element>
+			<element name="edit_history" type="exs:edit_historyType"></element>
+			<element name="edit_log" type="exs:stampsType"></element>
+		</sequence>
+		<attribute name="max_id" type="long" use="required"></attribute>
+    </complexType>
+
+
+
+	<complexType name="pathwaysType">
+		<sequence>
+			<element name="pathway" type="exs:pathwayType" minOccurs="0"
+				maxOccurs="unbounded"></element>
+		</sequence>
+		<attribute name="count" type="int"></attribute>
+	</complexType>
+
+	<complexType name="pathway_elementsType">
+		<sequence>
+			<element name="Substance_StructuralAlerts" type="exs:substance_structural_alertType">
+			</element>
+			<element name="Substance_Chemical" type="exs:substance_chemicalType"></element>
+			<element name="Link_SubstanceToReactiveSubstance" type="exs:link_substance_to_substance">
+			</element>
+			<element name="Substance_ReactiveChemical"
+				type="exs:substance_reactive_chemicalType">
+			</element>
+			<element name="Link_SubstanceToMIE" type="exs:link_substance_to_mie">
+			</element>
+			<element name="Effect_MolecularInitiatingEvent" type="exs:effect_molecular_initiating_eventType">
+			</element>
+			<element name="Effect_DownstreamEffect" type="exs:effect_downstream_effect_Type">
+			</element>
+			<element name="Effect_AdverseOutcome" type="exs:effect_adverse_outcomeType">
+			</element>
+			<element name="Effect_Endpoint" type="exs:effect_endpointType"></element>
+			<element name="Test " type="exs:testType"></element>
+			<element name="Link_EffectToEffect" type="exs:link_effect_to_effect">
+			</element>
+			<element name="Substance " type="exs:substanceType"></element>
+		</sequence>
+		<attribute name="count" type="int" use="required"></attribute>
+	</complexType>
+
+	<complexType name="pathwayType">
+		<sequence>
+			<element name="title" type="string"></element>
+			<element name="keywords" type="string"></element>
+			<element name="description" type="exs:descriptionType"></element>
+			<element name="reference_ids" type="exs:reference_idsType"></element>
+			<element name="elements" type="exs:pathway_elementsType"></element>
+		</sequence>
+		<attribute name="id" type="int" use="required"></attribute>
+    	<attribute name="defaultID" type="int" use="optional"></attribute>
+	</complexType>
+
+	<complexType name="descriptionType">
+		<sequence>
+			<element name="object_class" type="string"></element>
+			<element name="ids" type="string"></element>
+			<element name="objects" type="exs:sectionsType"></element>
+		</sequence>
+    	<attribute name="id" type="int" use="required"></attribute>
+    	<attribute name="defaultID" type="int" use="optional"></attribute>
+	</complexType>
+
+	<complexType name="sectionsType">
+		<sequence>
+			<element name="section" type="exs:description_sectionType"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="description_sectionType">
+		<complexContent>
+			<extension base="exs:effectopedia_objectType">
+				<sequence>
+					<element name="title" type="string"></element>
+					<element name="content" type="string"></element>
+				</sequence>				
+			</extension>
+		</complexContent>
+	</complexType>
+	
+
+
+
+
+
+
+    <complexType name="formatType">
+    	<attribute name="version" type="string" use="required"></attribute>
+    </complexType>
+
+    <complexType name="substance_structural_alertType">
+    	<sequence>
+    		<element name="title" type="string"></element>
+    		<element name="pathway_ids" type="exs:reference_idsType"></element>
+    		<element name="downstream_link_ids" type="exs:reference_idsType"></element>
+    	</sequence>
+    	<attribute name="id" type="int" use="required"></attribute>
+    	<attribute name="defaultID" type="int" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="substance_chemicalType">
+    	<complexContent>
+    		<extension base="exs:substanceType">
+    			<sequence>
+    				<element name="info" type="exs:infoType" maxOccurs="1" minOccurs="1"></element>
+        			<element name="properties" type="exs:propertiesType"></element>
+        			<element name="structure2Dimage" type="exs:structure2DimageType"></element>
+        			<element name="synonyms" type="exs:synonymsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="link_substance_to_substance">
+    	<complexContent>
+    		<extension base="exs:documented_knowledgeType">
+    			<sequence>
+    				<element name="substance" type="exs:reference_idType"></element>
+    				<element name="reactive_substance" type="exs:reference_idType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+
+    <complexType name="link_substance_to_mie">
+    	<complexContent>
+    		<extension base="exs:documented_knowledgeType">
+    			<sequence>
+    				<element name="substance "
+    					type="exs:reference_idType">
+    				</element>
+    				<element name="effect" type="exs:reference_idType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effect_molecular_initiating_eventType">
+    	<complexContent>
+    		<extension base="exs:effectType">
+    			<sequence>
+    				<element name="upstream_link_ids"
+    					type="exs:reference_idsType">
+    				</element>
+    				<element name="downstream_link_ids" type="exs:reference_idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effect_downstream_effect_Type">
+    	<complexContent>
+    		<extension base="exs:effectType">
+    			<sequence>
+    				<element name="upstream_link_ids" type="exs:reference_idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effect_adverse_outcomeType">
+    	<complexContent>
+    		<extension base="exs:effectType"></extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effect_endpointType">
+    	<complexContent>
+    		<extension base="exs:documented_knowledge_locatedType">
+    		   	<sequence>
+    				<element name="upstream_link_ids" type="exs:reference_idsType"></element>
+    				<element name="downstream_link_ids"
+    					type="exs:reference_idsType">
+    				</element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="testType">
+    	<complexContent>
+    		<extension base="exs:documented_knowledge_locatedType">
+    			<sequence>
+    				<element name="lab_ids" type="exs:idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="link_effect_to_effect">
+    	<complexContent>
+    		<extension base="exs:documented_knowledgeType">
+    			<sequence>
+    				<element name="from_effect "
+    					type="exs:reference_idType">
+    				</element>
+    				<element name="to_effect" type="exs:reference_idType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="substanceType">
+    	<complexContent>
+    		<extension base="exs:documented_knowledge_locatedType">
+    			<sequence>
+    				<element name="downstream_link_ids" type="exs:reference_idsType" maxOccurs="1" minOccurs="1"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+
+    <complexType name="source_tracesType"></complexType>
+
+    <complexType name="indicesType">
+    	<sequence>
+    		<element name="Pathways" type="exs:index_pathwaysType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Substances" type="exs:index_substancesType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Links" type="exs:index_linksType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Effects" type="exs:index_effectsType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Tests" type="exs:index_testsType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Labs" type="exs:index_labsType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="References" type="exs:index_referencesType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Discussion" type="exs:index_discussionType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Description" type="exs:index_descriptionType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="Context" type="exs:index_contextType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="IDsRefList" type="exs:index_ids_ref_listType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="IDRefList" type="exs:index_id_ref_listType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="PropertyTypes" type="exs:index_property_typeType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="edit_historyType">
+    	<sequence>
+    		<element name="user_actions" type="exs:user_actionsType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="stampsType">
+    	<sequence>
+    		<element name="stamp" type="exs:stampType"></element>
+    	</sequence>
+    	<attribute name="count" type="int" use="required"></attribute>
+    </complexType>
+
+    <complexType name="reference_idsType">
+    	<complexContent>
+    		<extension base="exs:effectopedia_objectType">
+    			<sequence>
+    				<element name="object_class" type="string"></element>
+    				<element name="ids" type="exs:itemsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="stampType">
+    	<sequence>
+    		<element name="action_id" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="user_id" type="int" maxOccurs="1" minOccurs="1"></element>
+    		<element name="location" type="string" maxOccurs="1" minOccurs="1"></element>
+    		<element name="date" type="dateTime" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    	<attribute name="id" type="int" use="required"></attribute>
+    </complexType>
+
+    <complexType name="infoType">
+    	<sequence>
+    		<element name="property" type="exs:propertyType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="propertyType">
+    	<sequence>
+    		<element name="type" type="exs:property_typeType"></element>
+    		<element name="value" type="exs:data_valueType"></element>
+    		<element name="unit" type="exs:unitType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="structure2DimageType">
+    	<sequence>
+    		<element name="property" type="exs:propertyType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="synonymsType">
+    	<sequence>
+    		<element name="property" type="exs:propertyType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="substance_reactive_chemicalType">
+    	<complexContent>
+    		<extension base="exs:substance_chemicalType">
+    			<sequence>
+    				<element name="upstream_link_ids" type="exs:reference_idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effectopedia_objectType">
+        <attribute name="id" type="long" use="required"></attribute>
+    	<attribute name="defaultID" type="long" use="optional"></attribute>
+    </complexType>
+
+    <complexType name="documented_knowledgeType">
+    	<complexContent>
+    		<extension base="exs:effectopedia_objectType">
+    			<sequence>
+    				<element name="title" type="string"></element>
+    				<element name="keywords" type="string"></element>
+    				<element name="description" type="exs:descriptionType"></element>
+    				<element name="reference_ids" type="exs:reference_idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="documented_knowledge_locatedType">
+    	<complexContent>
+    		<extension base="exs:documented_knowledgeType">
+    			<sequence>
+    				<element name="coordinates" type="exs:coordinatesType"></element>
+    			</sequence>
+     		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="coordinatesType">
+    	<sequence>
+    		<element name="coordinate" type="exs:coordinateType"></element>
+    	</sequence>
+    </complexType>
+
+
+    <complexType name="effectType">
+    	<complexContent>
+    		<extension base="exs:documented_knowledge_locatedType">
+    			<sequence>
+    				<element name="group" type="string"></element>
+    				<element name="related_test_ids" type="exs:reference_idsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="effect_downstream_effectType">
+    	<complexContent>
+    		<extension base="exs:effectType">
+    			<sequence>
+    				<element name="upstream_link_ids" type="exs:reference_idsType"></element>
+    				<element name="downstream_link_ids"
+    					type="exs:reference_idsType">
+    				</element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="reference_idType">
+    	<complexContent>
+    		<extension base="exs:effectopedia_objectType">
+    			<sequence>
+    				<element name="object_class" type="string" maxOccurs="1" minOccurs="1"></element>
+    				<element name="object_id" type="int" maxOccurs="1" minOccurs="1"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="idsType">
+    	<complexContent>
+    		<extension base="exs:reference_idsType">
+    			<sequence>
+    				<element name="objects" type="string"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="property_typeType"></complexType>
+
+    <complexType name="unitType">
+    	<sequence>
+    		<element name="caption" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="data_valueType">
+    	<sequence>
+    		<element name="value" type="anySimpleType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="propertiesType">
+    	<sequence>
+    		<element name="propery" type="exs:propertyType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="coordinateType">
+    	<sequence>
+    		<element name="value" type="exs:data_valueType"></element>
+    		<element name="unit" type="exs:unitType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="user_actionsType">
+    	<choice>
+    		<element name="simple_action"
+    			type="exs:simple_actionType">
+    		</element>
+    		<element name="group_action" type="exs:group_actionType"></element>
+    	</choice>
+    </complexType>
+
+    <complexType name="simple_actionType">
+    </complexType>
+    
+    <complexType name="group_actionType"></complexType>
+
+    <complexType name="itemsType"></complexType>
+
+    <complexType name="index_pathwaysType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_pathwaysType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_substancesType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_substancesType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_linksType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_linksType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_effectsType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_effectsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_testsType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_testsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_labsType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_labsType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_referencesType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_referencesType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_discussionType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_discussionType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_descriptionType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_descriptionType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_contextType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_contextType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_ids_ref_listType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_ids_ref_listType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_id_ref_listType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_id_ref_listType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="index_property_typeType">
+    	<complexContent>
+    		<extension base="exs:indexType">
+    			<sequence>
+    				<element name="items" type="exs:items_property_typeType"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="indexType">
+    	<sequence>
+    		<element name="associated_classes" type="exs:associated_classesType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="associated_classesType">
+    	<sequence>
+    		<element name="class" type="string"></element>
+    	</sequence>
+    	<attribute name="count" type="int"></attribute>
+    </complexType>
+
+    <complexType name="items_pathwaysType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.Pathway" type="exs:pathwayType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+
+    <complexType name="items_labsType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.Lab" type="exs:labType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+
+    <complexType name="labType"></complexType>
+
+    <complexType name="items_substancesType">
+    	<sequence>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Substance"
+    			type="exs:substanceType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Substance_Chemical"
+    			type="exs:substance_chemicalType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Substance_StructuralAlerts"
+    			type="exs:substance_structural_alertType">
+    		</element>
+    		<element name="org.qsari.effectopedia.core.objects.Substance_ReactiveChemical" type="exs:substance_reactive_chemicalType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_linksType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.Link"
+    			type="exs:linkType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Link_SubstanceToMIE"
+    			type="exs:link_substance_to_mie">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Link_SubstanceToReactiveSubstance"
+    			type="exs:link_substance_to_substance">
+    		</element>
+    		<element name="org.qsari.effectopedia.core.objects.Link_EffectToEffect" type="exs:link_effect_to_effect"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_effectsType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.Effect"
+    			type="exs:effectType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Effect_DownstreamEffect"
+    			type="exs:effect_downstream_effectType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Effect_MolecularInitiatingEvent"
+    			type="exs:effect_molecular_initiating_eventType">
+    		</element>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.Effect_Endpoint"
+    			type="exs:effect_endpointType">
+    		</element>
+    		<element name="org.qsari.effectopedia.core.objects.Effect_AdverseOutcome" type="exs:effect_adverse_outcomeType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_testsType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.Test" type="exs:testType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_referencesType">
+        <attribute name="count" type="long"></attribute>
+    </complexType>
+
+    <complexType name="items_discussionType">
+    	<sequence>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.DiscussionPosting"
+    			type="exs:discussion_postingType">
+    		</element>
+    		<element name="org.qsari.effectopedia.core.objects.DiscussionTopic" type="exs:discussion_topicType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_descriptionType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.objects.DescriptionSection" type="exs:description_sectionType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_contextType">
+    	<sequence>
+    		<element
+    			name="org.qsari.effectopedia.core.objects.ContextDimension"
+    			type="exs:context_dimensionType" maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    		<element name="org.qsari.effectopedia.core.objects.ContextDimension_Hierarchical" type="exs:context_dimension_hierarchicalType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+
+    <complexType name="items_ids_ref_listType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.base.ids.ReferenceIDs"
+    			type="exs:reference_idsType">
+    		</element>
+    		<element name="org.qsari.effectopedia.base.ids.IDs"
+    			type="exs:idsType">
+    		</element>
+    		<element name="org.qsari.effectopedia.base.ids.DescriptionIDs" type="exs:description_idsType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_id_ref_listType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.base.ids.ReferenceID" type="exs:reference_idType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="items_property_typeType">
+    	<sequence>
+    		<element name="org.qsari.effectopedia.core.embeddedobjects.ObjectPropertyType" type="exs:property_typeType"></element>
+    	</sequence>
+    	<attribute name="count" type="long"></attribute>
+    </complexType>
+    
+    <complexType name="context_dimensionType"></complexType>
+
+    <complexType name="context_dimension_hierarchicalType"></complexType>
+
+    <complexType name="description_idsType">
+    	<complexContent>
+    		<extension base="exs:idsType"></extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="discussion_postingType"></complexType>
+
+    <complexType name="discussion_topicType"></complexType>
+
+    <complexType name="linkType"></complexType>
+</schema>

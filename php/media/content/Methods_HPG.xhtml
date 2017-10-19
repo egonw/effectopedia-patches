@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body xmlns:m="http://www.w3.org/1998/Math/MathML">
+<div>
+  <p>We first describe the FAD exposure experiments. Then,  we present the mathematical model of the HPG-axis, and procedure for parameter  estimation.</p>
+  <p> </p>
+  <p align="center"><em>FAD exposure</em></p>
+  <p>The modeling described in the  present study incorporated data from three experiments with the aromatase inhibitor, FAD. The first of these studies was  previously described in detail by Villeneuve et al. (2009). Briefly, sexually  mature adult fathead minnows (<em>Pimephalespromelas</em>; 5-6 month old), obtained from an onsite  culture facility at the US EPA Mid-Continent Ecology Division (Duluth, MN),  were exposed to 0, 3, or 30 µg FAD/L. Fadrozole was  delivered to 20 L tanks containing 10 L of test solution via a continuous  flow (approximately 45 ml/min) of UV-treated, filtered Lake Superior Water.  Four male and four female fathead minnows were exposed in each tank. The  experiment was initiated by transferring random groups of fish directly to  tanks that had been receiving a continuous flow of test solution for  approximately 48 h. Addition of fish was staggered by replicate within each  treatment to permit all samples from a given exposure tank to be collected  within 45 min of the desired exposure duration. Fish were sampled after 1, 2,  4, and 8 days of exposure. After 8 days of exposure, remaining fish were held in  control Lake Superior Water (no FAD) and sampled after 1, 2, 4, or 8 days of  depuration. There were two replicate tanks for each unique exposure condition  (i.e., combination of treatment and time point). Urine, plasma, liver, gonad,  brain, and pituitary samples were collected and a variety of endocrine and toxicogenomic endpoints were examined. In total, Villeneuve <em>et al.</em> (2009) report results for over  15 different endocrine-related variables, and both transcriptomic  and metabolomic analyses of samples from the  experiment are underway. However, relative to the current modeling work, major  endpoints of interest included: plasma concentrations of E2 and ovarian  expression of a key steroidogenesis-related gene  CYP19A.</p>
+  <p>The second experiment was a  follow-up to the previous study to increase our understanding of adaptive  responses within the HPG axis of fathead minnows (Villeneuve <em>et al</em>., 2013). Briefly, reproductively  mature adult fathead minnows were exposed to 0, 0.5, or 30 µgFAD/L via a continuous flow through exposure, without the  use of carrier solvents. Fish were either exposed continuously and  sampled after 1, 8, 12, 16, 20, 24, or 28 days of exposure or exposed for 8  days, then held in a continuous flow of control Lake Superior Water (no FAD)  for an additional 4, 8, 12, 16, or 20 days. Various endpoints were analyzed,  including plasma E2 and ovarian CYP19A mRNA. Similarly, in the third  experiment, fathead minnows were exposed to 0, 0.04, 0.2, 1, or  5 µg FAD/L for 4 day and various endpoints were analyzed, including  plasma E2 (Ralston-Hooper <em>et al</em>.,  2013). </p>
+  <p> </p>
+  <p align="center"><em>Mathematical Model of HPG-axis </em></p>
+  <p>We developed a computational  model of the HPG axis for FAD-exposed female fathead minnows by modifying a  previously developed HPG axis model based on knowledge of biological  mechanisms. As described in the previous model, the extended model consists of  six tissue compartments: gill, brain, ovary, liver, venous blood, and rest of  body. These compartments, which are involved in HPG axis  signaling and feedback control, are connected in a manner consistent with the  cardiovascular system of the exposed fish. We did not consider arterial  blood as an independent compartment since it is not essential for this model.  Diagrams of the biochemical processes of each compartment are shown in Figures  1. The model includes a generalized regulatory feedback loop within the HPG  axis that mediates adaptive responses to endocrine stress from FAD. The  regulatory loop controls the secretion of gonadotropins  (LH and FSH) from brain. The description for each tissue compartment was previously  reported by Breen <em>et al.</em> (2013), except the description of protein synthesis for <em>cyp19a</em> in the ovary. In the extended  model, the rate of protein synthesis for <em>cyp19a</em> is a function  of CYP19A mRNA, ribosomes, transfer RNA (tRNA), and amino acids. Once CYP19A mRNA is transcribed for  the <em>cyp19a</em> gene, it moves to a ribosome to form an mRNA-ribosome complex. The tRNAs bind to amino acids to form tRNA-amino acid complexes, which bind to the CYP19A  mRNA-ribosome complex for translation of CYP19A mRNA and subsequent synthesis  of <em>cyp19a</em>.  In the ovary compartment, the model has zero-order synthesis and first-order  degradation of amino acids, and translation of <em>cyp19a</em> is described  by Michaelis-Menten kinetics. The time-varying concentration of substrates are  described by dynamic mass balances. We can express the dynamic mass balance for  the substrates in the compartment <em>y </em>with  volume <em>Vy</em>  as:  </p>
+  <p align="right"><m:math display='block'>
+ <m:mrow>
+  <m:msub>
+   <m:mi>V</m:mi>
+   <m:mi>y</m:mi>
+  </m:msub>
+  <m:mfrac>
+   <m:mrow>
+    <m:mi>d</m:mi><m:msub>
+     <m:mi>C</m:mi>
+     <m:mrow>
+      <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+    </m:msub>
+    </m:mrow>
+   <m:mrow>
+    <m:mi>d</m:mi><m:mi>t</m:mi></m:mrow>
+  </m:mfrac>
+  <m:mo>=</m:mo><m:msub>
+   <m:mi>P</m:mi>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo>&#x2212;</m:mo><m:msub>
+   <m:mi>U</m:mi>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo>&#x2212;</m:mo><m:msub>
+   <m:mi>D</m:mi>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo>+</m:mo><m:msub>
+   <m:mi>I</m:mi>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo>&#x2212;</m:mo><m:msub>
+   <m:mi>S</m:mi>
+   <m:mrow>
+    <m:mi>x</m:mi><m:mtext>,y</m:mtext></m:mrow>
+  </m:msub>
+  </m:mrow>
+</m:math>
+                                         (1)       </p>
+  <p>Where <em>Cx,y</em>   is the concentration of substrate<em> x</em> in compartment <em>y</em>, <em>Px,y</em> is the production  rate of substrate<em> x</em> in  compartment <em>y</em>, <em>Ux,y</em> is the  utilization rate of substrate<em> x</em> in compartment <em>y</em>, <em>Dx,y</em> is the  degradation rate of substrate<em> x</em> in compartment <em>y</em>, <em>Ix,y</em> is the import rate  of substrate<em> x</em> into compartment <em>y</em>, and <em>Sx,y</em> is the secretion  rate of substrate<em> x</em> from  compartment <em>y</em>. The first two terms in  the right side of Eq. (1) represent the net metabolic reaction rate of  substrate<em> x</em>. The last two terms  represent the net uptake or release rate of substrate<em> x</em> in compartment <em>y</em>.  The complete set of equations is provided in the Supplementary Data. </p>
+  <p> </p>
+  <p align="center"><em>Parameter  Estimation</em></p>
+  <p>The model consists of physiological and biochemical parameters  including tissue compartment volumes, blood flow rates, equilibrium partition  coefficients, and biochemical reaction rates (i.e. transcription, translation,  metabolism, transport, and degradation). As described in the previous model,  the extended model utilizes measured volumes of the major tissue compartments  (ovary, liver, brain) and the whole body, and calculated physiological  parameter values based on the literature. Based on our experimental results (Villeneuve <em>et al</em>., 2013), the equilibrium tissue:blood partition  coefficients for E2, and blood:water and tissue:blood partition coefficients for FAD were assumed to  be one. In the extended model, there are 28 biochemical parameters affecting  the dose-response and time-course behaviors of CYP19A mRNA and E2 for the  endocrine effects of FAD; literature reported values were used for five  parameters as in the previous model, and  23 parameters were estimated using the mean E2 concentrations from the fathead  minnow studies. We utilized measured plasma E2 data from the first and second  experiments for parameter estimation, and ovarian CYP19A mRNA data from the  first and second experiments along with plasma E2 data from the third  experiment for model validation. The definitions and values of  physiological constants and fixed biochemical parameters, and incorporated measured  E2 and CYP19A mRNA data were previously described in detail by Breen <em>et al.</em> (2013).    </p>
+  <p>      The  least squares method with the time-course data of E2 from the fathead minnow  studies was used to estimate biochemical parameters; 15 parameters in the ovary  compartment (<em>k</em>syn_mRNA_basal,<em>k</em>syn_mRNA_max,<em>k</em>loss_mRNA,<em>V</em>max_syn_CYP19A,<em>K</em>m_syn_CYP19A,<em>k</em>loss_CYP19A,<em>K</em>i_FAD, <em>K</em>a_syn_mRNA,<em>k</em>rib_on,<em>k</em>rib_off,<em>k</em>syn_AA,<em>k</em>loss_AA, <em>A</em>rib_total,<em>k</em>tRNA_on,<em>k</em>tRNA_off), two parameters in the liver  compartment (<em>k</em>loss_FAD,<em>k</em>loss_E2), four parameters in  the brain compartment (<em>k</em>0_syn_LHFSH,<em>k</em>loss_LHFSH, <em>k</em>LHFSH, <em>K</em>i_E2), and two  parameters in the venous blood compartment (<em>k</em>LHFSH_off,<em>k</em>loss_LHFSH).Let<em>nd</em>be  the number of time points in the time-course data of E2 for the <em>dth</em> FAD dose  (including control); <m:math>
+ <m:mrow>
+  <m:msubsup>
+   <m:mi>C</m:mi>
+   <m:mrow>
+    <m:mtext>E2,blood</m:mtext></m:mrow>
+   <m:mrow>
+    <m:mi>d</m:mi><m:mo>,</m:mo><m:mi>i</m:mi></m:mrow>
+  </m:msubsup>
+  </m:mrow>
+</m:math>
+ be the measured E2 plasma concentrations for the <em>dth</em> FAD dose at the <em>ith</em> time;<m:math>
+ <m:mrow>
+  <m:msub>
+   <m:mi>C</m:mi>
+   <m:mrow>
+    <m:mtext>E2,blood</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo stretchy='false'>(</m:mo><m:msub>
+   <m:mi>t</m:mi>
+   <m:mi>i</m:mi>
+  </m:msub>
+  <m:mo>;</m:mo><m:msup>
+   <m:mi>C</m:mi>
+   <m:mi>d</m:mi>
+  </m:msup>
+  <m:msub>
+   <m:mrow></m:mrow>
+   <m:mrow>
+    <m:mtext>FAD</m:mtext></m:mrow>
+  </m:msub>
+  <m:mo>,</m:mo><m:mover accent='true'>
+   <m:mi>k</m:mi>
+   <m:mo>&#x21C0;</m:mo>
+  </m:mover>
+  <m:mo stretchy='false'>)</m:mo></m:mrow>
+</m:math>
+ be the model‑predicted  concentrations of E2in the venous blood compartment at the <em>ith</em> time, <em>ti</em>,  for the <em>dth</em> FAD dose (including control), <em>Cd</em>FAD, with parameter set <p><m:math>
+ <m:mtable columnalign='left'>
+  <m:mtr>
+   <m:mtd>
+    <m:mover accent='true'>
+     <m:mi>k</m:mi>
+     <m:mo>&#x21C0;</m:mo>
+    </m:mover>
+    <m:mo>=</m:mo><m:mo stretchy='false'>(</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>basal</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>max</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>V</m:mi>
+     <m:mrow>
+      <m:mtext>max</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>m</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>i</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>FAD</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>&#x2003;</m:mtext><m:msub>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>a</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>on</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>AA</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>AA</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>A</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>total</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>tRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>on</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>tRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>FAD</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>E2</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>&#x2003;</m:mtext><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>LHFSH</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>i</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>E2</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>LHFSH</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo>,</m:mo><m:msub>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+    </m:msub>
+    <m:mo stretchy='false'>)</m:mo>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+ 
+</m:math>
+</p>
+</p>
+  <p>for<em>d</em>=1,2,3,4,  and <em>i</em>=1,…<em>nd</em>.  Then, the least squares estimate,
+  <p>
+   <m:math>
+ <m:mtable columnalign='left'>
+  <m:mtr>
+   <m:mtd>
+    <m:msup>
+     <m:mover accent='true'>
+      <m:mi>k</m:mi>
+      <m:mo>&#x21C0;</m:mo>
+     </m:mover>
+     
+     <m:mo>*</m:mo>
+    </m:msup>
+    <m:mo>=</m:mo><m:mo stretchy='false'>(</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>basal</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>max</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>V</m:mi>
+     <m:mrow>
+      <m:mtext>max</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>m</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>CYP19A</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>i</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>FAD</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>&#x2003;</m:mtext><m:msubsup>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>a</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>mRNA</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>on</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>AA</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>AA</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>A</m:mi>
+     <m:mrow>
+      <m:mtext>rib</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>total</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>tRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>on</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>tRNA</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss&#x005F;FAD</m:mtext></m:mrow>
+     <m:mtext>*</m:mtext>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>E2</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mn>0</m:mn><m:mo>&#x005F;</m:mo><m:mtext>syn</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo>
+   </m:mtd>
+  </m:mtr>
+  <m:mtr>
+   <m:mtd>
+    <m:mtext>&#x2003;</m:mtext><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>LHFSH</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>K</m:mi>
+     <m:mrow>
+      <m:mtext>i</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>E2</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>LHFSH</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>off</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo>,</m:mo><m:msubsup>
+     <m:mi>k</m:mi>
+     <m:mrow>
+      <m:mtext>loss</m:mtext><m:mo>&#x005F;</m:mo><m:mtext>LHFSH</m:mtext></m:mrow>
+     <m:mo>*</m:mo>
+    </m:msubsup>
+    <m:mo stretchy='false'>)</m:mo><m:mo>,</m:mo>
+   </m:mtd>
+  </m:mtr>
+ </m:mtable>
+ 
+</m:math>
+</p>
+</p>
+  <p>is the parameter values <m:math>
+ <m:mover accent='true'>
+  <m:mi>k</m:mi>
+  <m:mo>&#x21C0;</m:mo>
+ </m:mover>
+ 
+</m:math>
+, which minimizes the cost function</p>
+  <p align="right"><m:math display='block'>
+ <m:mrow>
+  <m:mi>J</m:mi><m:mo stretchy='false'>(</m:mo><m:munder accentunder='true'>
+   <m:mi>k</m:mi>
+   <m:mo>_</m:mo>
+  </m:munder>
+  <m:mo stretchy='false'>)</m:mo><m:mo>=</m:mo><m:mstyle displaystyle='true'>
+   <m:munderover>
+    <m:mo>&#x2211;</m:mo>
+    <m:mrow>
+     <m:mi>d</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+    <m:mn>4</m:mn>
+   </m:munderover>
+   <m:mrow>
+    <m:mstyle displaystyle='true'>
+     <m:munderover>
+      <m:mo>&#x2211;</m:mo>
+      <m:mrow>
+       <m:mi>i</m:mi><m:mo>=</m:mo><m:mn>1</m:mn></m:mrow>
+      <m:mrow>
+       <m:msub>
+        <m:mi>n</m:mi>
+        <m:mi>d</m:mi>
+       </m:msub>
+       </m:mrow>
+     </m:munderover>
+     <m:mrow>
+      <m:msup>
+       <m:mrow>
+        <m:mrow><m:mo>(</m:mo>
+         <m:mrow>
+          <m:msubsup>
+           <m:mi>C</m:mi>
+           <m:mrow>
+            <m:mtext>E2,blood</m:mtext></m:mrow>
+           <m:mrow>
+            <m:mi>d</m:mi><m:mo>,</m:mo><m:mi>i</m:mi></m:mrow>
+          </m:msubsup>
+          <m:mo>&#x2212;</m:mo><m:msub>
+           <m:mi>C</m:mi>
+           <m:mrow>
+            <m:mtext>E2,blood</m:mtext></m:mrow>
+          </m:msub>
+          <m:mo stretchy='false'>(</m:mo><m:msub>
+           <m:mi>t</m:mi>
+           <m:mi>i</m:mi>
+          </m:msub>
+          <m:mo>;</m:mo><m:msubsup>
+           <m:mi>C</m:mi>
+           <m:mrow>
+            <m:mtext>FAD</m:mtext></m:mrow>
+           <m:mi>d</m:mi>
+          </m:msubsup>
+          <m:mo>,</m:mo><m:mover accent='true'>
+           <m:mi>k</m:mi>
+           <m:mo>&#x21C0;</m:mo>
+          </m:mover>
+          <m:mo stretchy='false'>)</m:mo></m:mrow>
+        <m:mo>)</m:mo></m:mrow></m:mrow>
+       <m:mn>2</m:mn>
+      </m:msup>
+      </m:mrow>
+    </m:mstyle></m:mrow>
+  </m:mstyle><m:mo>.</m:mo></m:mrow>
+</m:math>
+                                                            [2]</p>
+  <p>Parameters were estimated with aniterative nonlinear optimization algorithm using  MATLAB R2010a (Mathworks, Natick, MA, USA)  software. We chose the Nelder-Mead simplex method for  its relative insensitivity to the initial parameter values as compared to other  common methods, such as Newton&rsquo;s method, and its robustness to discontinuities (Nelder and Mead,  1965). We confirmed convergence to the solution after the parameter search  terminated.</p>
+  <p> </p>
+  <p align="center"><em>Sensitivity  Analysis</em></p>
+  <p>We performed a sensitivity analysis to examine model  parameter uncertainty using the method previously described (Breen <em>et al</em>., 2013).Briefly, the sensitivity  function relates changes of the model output to changes in the model  parameters. We calculated relative sensitivity functions <em>R</em>E2,blood,ki (<em>t</em>) and <em>R</em>mRNA,ovary,ki (<em>t</em>) with respect to parameter <em>ki</em>for  each of the model-predicted concentrations <em>C</em>E2,  blood and fold changes of CYP19AmRNA in the ovary compartment <em>F</em>mRNA,ovary,  respectively. MATLAB was used to numerically solve the partial derivatives in <em>R</em>E2,blood,ki  (<em>t</em>) and <em>R</em>mRNA,ovary,ki (<em>t</em>) for control and each FAD dose. To  rank the relative sensitivities, we calculated the L2 norm across time for each  relativity sensitivity function as described by </p>
+  <p align="right"><m:math display='block'>
+ <m:mrow>
+  <m:mtext>L2</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>norm</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msub>
+     <m:mi>R</m:mi>
+     <m:mrow>
+      <m:mtext>E2,blood,</m:mtext><m:msub>
+       <m:mi>k</m:mi>
+       <m:mi>i</m:mi>
+      </m:msub>
+      </m:mrow>
+    </m:msub>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mstyle displaystyle='true'>
+       <m:mrow><m:mo>&#x222B;</m:mo>
+        <m:mrow>
+         <m:mrow><m:mo>|</m:mo> <m:mrow>
+          <m:msub>
+           <m:mi>R</m:mi>
+           <m:mrow>
+            <m:mtext>E2,blood,</m:mtext><m:msub>
+             <m:mi>k</m:mi>
+             <m:mi>i</m:mi>
+            </m:msub>
+            </m:mrow>
+          </m:msub>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mi>t</m:mi>
+          <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+       </m:mrow>
+       
+      </m:mstyle></m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>d</m:mi><m:mi>t</m:mi></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+                                       [5]</p>
+  <p>and</p>
+  <p align="right"><m:math display='block'>
+ <m:mrow>
+  <m:mtext>L2</m:mtext><m:mtext>&#x2009;</m:mtext><m:mtext>norm</m:mtext><m:mrow><m:mo>(</m:mo>
+   <m:mrow>
+    <m:msub>
+     <m:mi>R</m:mi>
+     <m:mrow>
+      <m:mtext>mRNA,ovary,</m:mtext><m:msub>
+       <m:mi>k</m:mi>
+       <m:mi>i</m:mi>
+      </m:msub>
+      </m:mrow>
+    </m:msub>
+    </m:mrow>
+  <m:mo>)</m:mo></m:mrow><m:mo>=</m:mo><m:msqrt>
+   <m:mrow>
+    <m:msup>
+     <m:mrow>
+      <m:mstyle displaystyle='true'>
+       <m:mrow><m:mo>&#x222B;</m:mo>
+        <m:mrow>
+         <m:mrow><m:mo>|</m:mo> <m:mrow>
+          <m:msub>
+           <m:mi>R</m:mi>
+           <m:mrow>
+            <m:mtext>mRNA,ovary,</m:mtext><m:msub>
+             <m:mi>k</m:mi>
+             <m:mi>i</m:mi>
+            </m:msub>
+            </m:mrow>
+          </m:msub>
+          <m:mrow><m:mo>(</m:mo>
+           <m:mi>t</m:mi>
+          <m:mo>)</m:mo></m:mrow></m:mrow> <m:mo>|</m:mo></m:mrow></m:mrow>
+       </m:mrow>
+       
+      </m:mstyle></m:mrow>
+     <m:mn>2</m:mn>
+    </m:msup>
+    <m:mi>d</m:mi><m:mi>t</m:mi></m:mrow>
+  </m:msqrt>
+  </m:mrow>
+</m:math>
+.                                         [6]</p>
+  <p>Magnitudes of the relative sensitivities relate the degree  to which changes in parameters values lead to changes in model outputs. The key  purpose of sensitivity analysis is to identify the main contributors to the  variation in the model outcome by ordering the inputs by importance; parameters  with high sensitivity are more important for the model output than parameters  with low sensitivity. </p>
+  <p> </p>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>D:\JAVA\effectopedia.jar</jar>
+  <outfile>D:\JAVA\org.qsari.effectopedia\win\Effectopedia.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir></chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>D:\JAVA\org.qsari.effectopedia\win\Effectopedia.ico</icon>
+  <jre>
+    <path>C:\Program Files\Java\jre1.8.0_131\bin</path>
+    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8.0</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJdk</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <initialHeapPercent>10</initialHeapPercent>
+    <maxHeapPercent>50</maxHeapPercent>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.2.0.0</fileVersion>
+    <txtFileVersion>1.2.0 Beta</txtFileVersion>
+    <fileDescription>Effectopedia Windows Executable</fileDescription>
+    <copyright>International QSAR Foundation</copyright>
+    <productVersion>1.2.0.0</productVersion>
+    <txtProductVersion>1.2.0 Beta</txtProductVersion>
+    <productName>Effectopedia</productName>
+    <companyName>OECD, International QSAR Foundation, IBPhBME at BAS</companyName>
+    <internalName>Effectopedia</internalName>
+    <originalFilename>Effectopedia.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>ENGLISH_US</language>
+  </versionInfo>
+</launch4jConfig>

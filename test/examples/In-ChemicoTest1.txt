@@ -1,0 +1,13 @@
+In-chemicoTest1							
+chem. conc.	Tested Chemical						
+logMol	mean value	min value	max value	standard deviation	standard mean error	confidence interval 95%	number of replicates
+-12	0				1		
+-11	0				2		
+-10	1				1		
+-9	2				2		
+-8	5				1		
+-6	10				2		
+-5	12				2		
+-4	13				1		
+-3	14				2		
+-2	14				1		

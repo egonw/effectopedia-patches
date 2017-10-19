@@ -1,0 +1,5 @@
+Bundle-Version: 0.9.55.${tstamp}
+Bundle-Name: Effectopedia Grpahic Objects
+Bundle-Description: Layout and Graphic Privitives to draw pathway elements
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0

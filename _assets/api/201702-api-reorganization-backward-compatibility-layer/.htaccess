@@ -1,0 +1,21 @@
+RewriteRule ^hybridauth/test/.*$ https://app.effectopedia.org/media/content/api_incompatible.html [P,L]
+RewriteRule ^sys/(.*)$ https://app.effectopedia.org/sys/$1 [P,L]
+
+RewriteRule ^chem/(.*)$ https://app.effectopedia.org/media/chem/$1 [P,L]
+RewriteRule ^rev/media/(.*)$ https://app.effectopedia.org/media/rev/$1 [P,L]
+RewriteRule ^rev/content/(.*)$ https://app.effectopedia.org/media/content/$1 [P,L]
+
+RewriteRule ^rev/(.*\.php)$ https://app.effectopedia.org/api.php/production/$1 [P,L]
+RewriteRule ^test_rev/(.*\.php)$ https://app.effectopedia.org/api.php/test/$1 [P,L]
+RewriteRule ^debug_rev/(.*\.php)$ https://app.effectopedia.org/api.php/debug/$1 [P,L]
+
+RewriteRule ^rev/(.*)$ https://app.effectopedia.org/api.php/production/download.php?name=$1 [P,L]
+RewriteRule ^test_rev/(.*)$ https://app.effectopedia.org/api.php/test/download.php?name=$1 [P,L]
+RewriteRule ^debug_rev/(.*)$ https://app.effectopedia.org/api.php/debug/download.php?name=$1 [P,L]
+
+# Redirect everything else to SSL
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(?!(.well-known|hybridauth|sys|chem|rev|test_rev|debug_rev))(.*)$ https://www.effectopedia.org/$2 [L,R=301]
+
+RewriteRule ^xmldb\.php$ /xmldb/ [P,L]

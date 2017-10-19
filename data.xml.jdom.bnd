@@ -1,0 +1,8 @@
+Private-Package:  \
+	org.qsari.effectopedia.data.xml
+Bundle-Version: 0.9.55.${tstamp}
+Bundle-Activator: org.qsari.effectopedia.data.xml.Activator
+Bundle-Name: Effectopedia XML Support
+Bundle-Description: XML support using jdom library
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0

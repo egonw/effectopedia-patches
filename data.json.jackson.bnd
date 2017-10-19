@@ -1,0 +1,8 @@
+Bundle-Version: 0.9.55.${tstamp}
+Private-Package:  \
+	org.qsari.effectopedia.data.json
+Bundle-Activator: org.qsari.effectopedia.data.json.Activator
+Bundle-Name: Effectopedia JSON Support
+Bundle-Description: JSON support using Jackson library
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0

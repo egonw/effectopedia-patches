@@ -1,0 +1,13 @@
+org.qsari.effectopedia.base
+org.qsari.effectopedia.core
+org.qsari.effectopedia.core.containers
+org.qsari.effectopedia.core.objects
+org.qsari.effectopedia.data
+org.qsari.effectopedia.go
+org.qsari.effectopedia.go.Layout
+org.qsari.effectopedia.gui
+org.qsari.effectopedia.gui.comp
+org.qsari.effectopedia.gui.im
+org.qsari.effectopedia.gui.nav
+org.qsari.effectopedia.history
+org.qsari.effectopedia.system

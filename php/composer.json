@@ -1,0 +1,11 @@
+{
+  "name": "effectopedia/authentication",
+  "description": "",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+  ],
+  "require": {
+    "league/oauth2-client": "2.1.0"
+  }
+}

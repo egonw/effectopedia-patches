@@ -1,0 +1,41 @@
+-sub:  \
+	*.bnd
+Bundle-Version: 0.9.55.${tstamp}
+-runfw: org.apache.felix.framework;version='[4.4.1,4.4.1]'
+-runee: JavaSE-1.7
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.dependencymanager)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.runtime)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=com.fasterxml.jackson.core.jackson-annotations)',\
+	osgi.identity;filter:='(osgi.identity=com.fasterxml.jackson.core.jackson-core)',\
+	osgi.identity;filter:='(osgi.identity=com.fasterxml.jackson.core.jackson-databind)',\
+	osgi.identity;filter:='(osgi.identity=gui-utilities)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.servicemix.bundles.jdom)',\
+	osgi.identity;filter:='(osgi.identity=proxy-vole)',\
+	osgi.identity;filter:='(osgi.identity=org.qsari.effectopedia.kernel)',\
+	osgi.identity;filter:='(osgi.identity=org.qsari.effectopedia.proxy)',\
+	osgi.identity;filter:='(osgi.identity=org.qsari.effectopedia.data.xml.jdom)',\
+	osgi.identity;filter:='(osgi.identity=org.qsari.effectopedia.data.json.jackson)',\
+	osgi.identity;filter:='(osgi.identity=org.qsari.effectopedia.gui.swing)'
+-buildpath:  \
+	com.fasterxml.jackson.core.jackson-annotations,\
+	com.fasterxml.jackson.core.jackson-core,\
+	com.fasterxml.jackson.core.jackson-databind,\
+	gui-utilities,\
+	org.apache.felix.dependencymanager,\
+	org.apache.servicemix.bundles.jdom,\
+	osgi.cmpn,\
+	osgi.core,\
+	proxy-vole,\
+	org.apache.felix.gogo.command,\
+	org.apache.felix.gogo.runtime,\
+	org.apache.felix.gogo.shell
+-resolve: auto
+	
+	
+	
+-runsystempackages:  \
+    javax.swing.*,\javafx.application.Platform, 
+    

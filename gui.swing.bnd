@@ -1,0 +1,28 @@
+Private-Package:  \
+	org.qsari.effectopedia.gui.core,\
+	org.qsari.effectopedia.gui,\
+	org.openide.awt,\
+	org.openide.awt.res,\
+	org.qsari.effectopedia.gui.chart,\
+	org.qsari.effectopedia.gui.comp,\
+	org.qsari.effectopedia.gui.comp.autocomplete,\
+	org.qsari.effectopedia.gui.im,\
+	org.qsari.effectopedia.gui.inspector,\
+	org.qsari.effectopedia.gui.nav,\
+	org.qsari.effectopedia.gui.ref_ids_table,\
+	org.qsari.effectopedia.gui.res,\
+	org.qsari.effectopedia.gui.toolbars,\
+	org.qsari.effectopedia.gui.util,\
+	org.qsari.effectopedia.gui.default_ui
+Bundle-Version: 0.9.55.${tstamp}
+Bundle-Name: Effectopedia Graphic User Interface 
+Bundle-Description: Java Swing implementation of the Effectopedia graphic user interface
+Bundle-Copyright: Hristo Aladjov
+Bundle-License: GPL v3.0
+Export-Package:  \
+	org.qsari.effectopedia.go,\
+	org.qsari.effectopedia.go.builder,\
+	org.qsari.effectopedia.go.containers,\
+	org.qsari.effectopedia.go.gui,\
+	org.qsari.effectopedia.go.Layout,\
+	org.qsari.effectopedia.go.pathway_elements

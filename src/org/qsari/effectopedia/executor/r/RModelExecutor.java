@@ -4,6 +4,7 @@ import java.awt.FileDialog;
 import java.awt.Frame;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 import org.qsari.effectopedia.core.modelling.AbstractFileBasedModelExecutor;
 import org.qsari.effectopedia.core.modelling.ExecutableModel;
@@ -144,7 +145,9 @@ public class RModelExecutor extends AbstractFileBasedModelExecutor implements Mo
 					}
 				if (engineArgs != null)
 					console.println("Creating REngine (" + engineArgs.toString() + ")");
-				rEngine = new Rengine(engineArgs, false, new RConsole());
+				String[] extendedArgs = Arrays.copyOf(engineArgs, engineArgs.length + 1);
+				extendedArgs[extendedArgs.length - 1] = "--no-save"; // append this option
+				rEngine = new Rengine(extendedArgs, false, new RConsole());
 				console.println("Rengine created, waiting for R");
 				// the engine creates R is a new thread, so we should wait until it's ready
 				if (!rEngine.waitForR())

@@ -135,7 +135,10 @@ public class RModelExecutor extends AbstractFileBasedModelExecutor implements Mo
 				if (!Rengine.jriLoaded)
 					{
 						console
-								.println("Please make sure that rJava package is installed in R and its bin directory is added to the system PATH,\nR_HOME directory is set and jri.dll (in Windows) is available in the bin directory of your R installation!");
+								.println("Please make sure that rJava package is installed in R and its bin directory is added to the system PATH,\n"
+										+ "R_HOME directory is set and jri.dll (in Windows) or libjrs.so (on Linux) is available in one of the\n"
+										+ "following bin directories of your R installation:\n\n"
+										+ System.getProperty("java.library.path"));						
 						return false;
 					}
 				if (!Rengine.versionCheck())

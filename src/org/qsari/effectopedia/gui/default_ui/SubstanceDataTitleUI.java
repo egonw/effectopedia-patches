@@ -217,7 +217,7 @@ public class SubstanceDataTitleUI extends EffectopediaObjectTitleUI implements A
 			{
 				if (!jcbReference.isSelected())
 					{
-						if (UserInterface.getUserConfirmation("You have choosen to ignor the supplied reference data. \nAll values for the reference treatment will be lost. \nDo you still want to proceed?"))
+						if (UserInterface.getUserConfirmation("You have choosen to ignore the supplied reference data. \nAll values for the reference treatment will be lost. \nDo you still want to proceed?"))
 							{
 								dataTemplates.remove(1);
 								ObjectProperties op = substanceData.getObjectProperties();
